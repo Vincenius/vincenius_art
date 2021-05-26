@@ -35,7 +35,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Vincenius Art - creating art with spray paint and stencils</title>
-        <meta charset="UTF-8"/>
+        <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width"/>
         <meta name="description" content="The website to showcase the art created by Vincent Will." />
 
