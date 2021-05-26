@@ -1,0 +1,79 @@
+.container {
+  padding: 150px 0 225px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #BAE9BB;
+  position: relative;
+}
+
+.headline {
+  color: #034A46;
+  text-transform: uppercase;
+  font-size: 75px;
+  margin: 10px 0;
+}
+
+.iconLinks {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+
+.iconLinks svg {
+  fill: #034A46;;
+  width: auto;
+}
+
+.iconLinks svg:hover {
+  opacity: 0.7;
+}
+
+.iconLinks li a {
+  padding: 16px 20px;
+}
+
+.screenReader {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+}
+
+.divider {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 10vw;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.dividerFill {
+  fill: #FFFFFF;
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 125px 0 150px;
+  }
+
+  .headline {
+    font-size: 40px;
+  }
+}

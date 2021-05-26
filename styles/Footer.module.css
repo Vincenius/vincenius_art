@@ -1,0 +1,41 @@
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 200px 20px 20px;
+  background: #BAE9BB;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 10vw;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.dividerFill {
+  fill: #FFFFFF;
+}
+
+.linkList {
+  margin: 0;
+  list-style: none;
+  text-align: end;
+}
+
+.linkList li {
+  margin: 5px 0;
+}
