@@ -58,6 +58,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="theme-color" content="#BAE9BB" />
+        <script async defer data-website-id="1e4fb5c8-219e-4b0b-92e1-428579552b58" src="https://analytics.vincentwill.com/umami.js"></script>
       </Head>
 
       <Header />
