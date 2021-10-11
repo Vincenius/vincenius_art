@@ -9,14 +9,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 import { useWindowSize } from '../utils'
-import { imagesPath } from '../utils/constants'
+import { imagesPath, breakpointColumnsObj } from '../utils/constants'
 import images from './images.json'
-
-const breakpointColumnsObj = {
-  default: 3,
-  900: 2,
-  500: 1
-};
 
 const getColumns = width => {
   const elem = Object.entries(breakpointColumnsObj).find(
