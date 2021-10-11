@@ -30,20 +30,14 @@ const Image = ({ data, windowWidth, columns, openImage }) => {
       width={imageWidth}
       className={styles.imagePreview}
     /> }
-    { renderImage && <picture>
-      <source srcset={`${imagesPath}w_320_${data.fileName}`} media="(max-width: 320px)" />
-      <source srcset={`${imagesPath}w_600_${data.fileName}`} media="(max-width: 320px) and (-webkit-min-device-pixel-ratio: 2)" />
-      <source srcset={`${imagesPath}w_600_${data.fileName}`} media="(max-width: 499px)" />
-      <source srcset={`${imagesPath}w_900_${data.fileName}`} media="(max-width: 499px) and (-webkit-min-device-pixel-ratio: 2)" />
-      <source srcset={`${imagesPath}w_900_${data.fileName}`} media="(max-width: 900px)" />
-      <source srcset={`${imagesPath}w_1200_${data.fileName}`} media="(max-width: 900px) and (-webkit-min-device-pixel-ratio: 2)" />
-      <img
-        src={`${imagesPath}${data.fileName}`}
-        alt={data.description || data.fileName}
-        className={styles.image}
-        onClick={() => openImage()}
-      />
-    </picture> }
+    { renderImage && <img
+      sizes="(min-width: 320px) 320px, (min-width: 600px) 600px, (min-width: 900px) 900px, (min-width: 120px) 120px, 100vw"
+      srcset={`${imagesPath}w_320_${data.fileName} 320w, ${imagesPath}w_600_${data.fileName} 600w, ${imagesPath}w_900_${data.fileName} 900w, ${imagesPath}w_900_${data.fileName} 1200w`}
+      src={`${imagesPath}w_1200_${data.fileName}`}
+      alt={data.description || data.fileName}
+      className={styles.image}
+      onClick={() => openImage()}
+    /> }
   </div>
 }
 

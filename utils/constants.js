@@ -1,4 +1,4 @@
-export const imagesPath = '/gallery/'
+export const imagesPath = 'https://vincenius.com/gallery/'
 
 export const title = 'Vincenius Art'
 export const description = ''
