@@ -52,6 +52,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="theme-color" content="#BAE9BB" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap" rel="stylesheet" />
+
         <script async defer data-website-id="1e4fb5c8-219e-4b0b-92e1-428579552b58" src="https://analytics.vincentwill.com/umami.js"></script>
       </Head>
 
