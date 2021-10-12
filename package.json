@@ -16,16 +16,14 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.58",
-    "@react-three/fiber": "^6.2.1",
     "gifsicle": "^5.2.0",
-    "next": "10.2.0",
+    "next": "^11.1.2",
     "pngquant-bin": "^6.0.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-image-lightbox": "^5.1.1",
     "react-intersection-observer": "^8.32.1",
-    "react-masonry-css": "^1.0.16",
-    "three": "^0.128.0"
+    "react-masonry-css": "^1.0.16"
   },
   "devDependencies": {
     "compress-images": "^1.9.9",
