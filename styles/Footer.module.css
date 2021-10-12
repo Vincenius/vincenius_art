@@ -2,10 +2,11 @@
   position: relative;
   width: 100%;
   padding: 200px 20px 20px;
-  background: #BAE9BB;
+  background: #EEDB2A;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 100px;
 }
 
 .divider {
@@ -27,7 +28,7 @@
 }
 
 .dividerFill {
-  fill: #FFFFFF;
+  fill: #f2f2f2;
 }
 
 .linkList {
