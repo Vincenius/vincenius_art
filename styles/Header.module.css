@@ -8,7 +8,7 @@
 }
 
 .headline {
-  color: #034A46;
+  color: #212121;
   text-transform: uppercase;
   font-size: 75px;
   margin: 10px 0;
@@ -41,7 +41,7 @@
 }
 
 .iconLinks svg {
-  fill: #034A46;;
+  fill: #212121;;
   width: auto;
 }
 
