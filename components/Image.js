@@ -10,7 +10,7 @@ const Image = ({ data, windowWidth, columns, openImage }) => {
   const [renderImage, setRenderImage] = useState(false)
   const { width, height } = data
   const imageResolution = height / width
-  const imageWidth = (windowWidth / columns) - 20 // 20 = margin
+  const imageWidth = (windowWidth / columns) - 40 // 40 = margin
   const responsiveImageHeight = imageWidth * imageResolution
 
   const sourceSet = `${imagesPath}w_320_${data.fileName} 320w, ${imagesPath}w_600_${data.fileName} 600w, ${imagesPath}w_900_${data.fileName} 900w, ${imagesPath}w_900_${data.fileName} 1200w`
