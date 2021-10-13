@@ -24,6 +24,12 @@ export default function Home() {
   const [lightboxIndex, setLightboxIndex] = useState(0)
   const [isLightboxOpen, setLightboxOpen] = useState(false)
   const columns = getColumns(windowWidth)
+  const prevImageIndex = lightboxIndex === 0
+    ? images.length - 1 // last item
+    : lightboxIndex - 1
+  const nextImageIndex = lightboxIndex === (images.length - 1)
+    ? 0 // first item
+    : lightboxIndex + 1
 
   return (
     <div className={styles.container}>
@@ -51,7 +57,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.png" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <meta name="theme-color" content="#BAE9BB" />
+        <meta name="theme-color" content="#FFAB00" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
@@ -84,11 +90,11 @@ export default function Home() {
 
         { isLightboxOpen && <Lightbox
             mainSrc={`${imagesPath}${images[lightboxIndex].fileName}`}
-            nextSrc={images[(lightboxIndex + 1) % images.length]}
-            prevSrc={images[(lightboxIndex + images.length - 1) % images.length]}
+            nextSrc={`${imagesPath}${images[nextImageIndex].fileName}`}
+            prevSrc={`${imagesPath}${images[prevImageIndex].fileName}`}
             onCloseRequest={() => setLightboxOpen(false)}
-            onMovePrevRequest={() => setLightboxIndex((lightboxIndex + images.length - 1) % images.length)}
-            onMoveNextRequest={() => setLightboxIndex((lightboxIndex + 1) % images.length)}
+            onMovePrevRequest={() => setLightboxIndex(prevImageIndex)}
+            onMoveNextRequest={() => setLightboxIndex(nextImageIndex)}
             imageCaption={images[lightboxIndex].description}
           /> }
       </main>
