@@ -63,7 +63,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap" rel="stylesheet" />
 
-        <script async defer data-website-id="1e4fb5c8-219e-4b0b-92e1-428579552b58" src="https://analytics.vincentwill.com/umami.js"></script>
+        <script defer src="https://analytics.vincentwill.com/script.js" data-website-id="a070b6c4-056f-4a13-948a-76c5b76cc7fe"></script>
       </Head>
 
       <Header />
